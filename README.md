@@ -1,10 +1,8 @@
-# SpecKit
-A Python-based GUI tool for neutron spectrum reconstruction using neutron activation analysis
 # SPECKIT
 
-![SPECKIT Logo](./images/fig0.png)
+![SPECKIT Logo](./fig/fig0.png)
 
-*A lightweight, user-friendly toolkit for neutron spectrum unfolding using activation data.*
+*SpecKit: An Integrated Toolkit for Neutron Spectrum Unfolding Using Activation Reactions*
 
 ---
 
