@@ -191,6 +191,46 @@ The neutron flux was tallied using an F4 tally within a thin spherical shell (ra
 ![Data Preparation UI](./fig/fig11.png)
 **Figure 11** shows the comparison between the true and prior spectra.  
 Because both material differences and neutron yield variations are present, the flux differences between energy groups become more pronounced compared with the double-peak case.
+---
+## Benchmark -- Error Analysis
+
+### (1) Double-Peak Spectrum
+
+The error analysis was carried out by comparing the **activation reaction data** generated from the true spectrum with the unfolding results obtained using the **prior spectrum** as the initial input. The objective was to evaluate the sensitivity and accuracy of the unfolding algorithm across different neutron energy ranges.  
+
+Table 2 summarizes the relative error of the unfolded spectra, defined as  
+**ABS(calculate − true) / true**,  
+for three representative energy intervals:  
+- Thermal region: 1×10⁻¹¹ – 2.5×10⁻⁸ MeV  
+- Epithermal/Intermediate region: 2.5×10⁻⁸ – 1 MeV  
+- Fast region: 1 – 30 MeV  
+
+A total of **ten activation products** were selected as reaction channels in this benchmark:  
+Au-197, Fe-56, Al-27, Ni-58, Fe-54, Cu-63, Ti-48, Na-23, Co-59, and S-32.  
+The relative error for each activation product was evaluated individually in the three energy regions and compared with the prior spectrum. In Table 2,  
+- **Blue shading** indicates that the unfolded spectrum error is smaller than that of the prior spectrum.  
+- **Red shading** indicates a larger error compared to the prior spectrum.  
+
+Results show that **Au-197, Na-23, and Co-59** provide better reconstruction in the thermal region (E < 2.5×10⁻⁸ MeV), while most other products perform better in the fast neutron region (E > 1 MeV). When all ten activation products are included simultaneously in the iterative calculation, the reconstruction accuracy is significantly improved across the full spectrum. The **total relative error** in all three energy ranges is lower than that of the prior spectrum.  
+
+This observation is consistent with theoretical expectations: the combination of multiple reaction channels compensates for the limited sensitivity of individual reactions in specific energy regions, thereby enhancing both the **stability** and **accuracy** of the spectrum unfolding process.  
+
+**Table 2.** Relative error of unfolded spectra in different energy regions  
+Error metric: ABS(calculate − true) / true  
+
+| Energy (MeV)      | Prior | Au-197 | Fe-56 | Al-27 | Ni-58 | Fe-54 |
+|-------------------|-------|--------|-------|-------|-------|-------|
+| 1E-11 ~ 2.5E-8    | 0.6960| 0.4857 | 0.7746| 0.7780| 0.7621| 0.7613|
+| 2.5E-8 ~ 1        | 0.1670| 0.3662 | 0.1352| 0.1484| 0.0873| 0.0843|
+| 1 ~ 30            | 0.2589| 0.3149 | 0.0671| 0.0813| 0.0155| 0.0122|
+
+| Energy (MeV)      | Cu-63 | Ti-48 | Na-23 | Co-59 | S-32  | TOTAL (10 products) |
+|-------------------|-------|-------|-------|-------|-------|---------------------|
+| 1E-11 ~ 2.5E-8    | 0.7721| 0.7766| 0.4564| 0.6205| 0.7609| 0.1473              |
+| 2.5E-8 ~ 1        | 0.1255| 0.1429| 1.0707| 0.4560| 0.0829| 0.0868              |
+| 1 ~ 30            | 0.0567| 0.0754| 1.2337| 0.5706| 0.0107| 0.0113              |
+
+**Figure 12** shows the comparison between the true spectrum and the unfolded spectrum. In the double-peak spectrum case, the use of all ten activation products (TOTAL) clearly outperforms individual reconstructions. The overall curve reproduces the peak positions and relative intensities much more accurately, with deviations in the medium-to-high energy range significantly reduced. Although some local discrepancies remain at the low-energy end due to cross-section sensitivity limitations, the combined multi-reaction approach effectively suppresses systematic deviations and improves both **accuracy** and **robustness** across the entire energy range.
 
 
 ---
