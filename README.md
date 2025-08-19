@@ -50,19 +50,44 @@ pip install -r requirements.txt
 
 
 ## 🚀 Usage
-### Command Line Example
-```bash
-python src/speckit.py --input activation_data.csv --method maxed --output spectrum.png
-```
+## 🧩 Module 1: Data Preparation
+**Script:** `cross_section_input_generator.py`
+**User Interface**  
+![Data Preparation UI](./fig/fig1.png)
 
-### Python API Example
-```python
-from speckit import Unfolder
+This module prepares the **reaction cross-section data** and **energy group structure** before spectrum unfolding.
 
-unfolder = Unfolder(method="maxed")
-spectrum = unfolder.unfold("activation_data.csv")
-spectrum.plot()
-```
+### Features
+- Imports activation reaction cross-section libraries  
+  (pre-packaged datasets are provided, from IAEA Nuclear Data Services: https://www-nds.iaea.org/exfor/endf.htm)
+  ![Data Preparation UI](./fig/fig2.png)
+- Reads user-defined **energy group boundary file** (e.g., in MeV, converted to eV)
+  ![Data Preparation UI](./fig/fig3.png)  
+- Combines physical parameters of activation materials  
+  (mass, atomic weight, half-life, irradiation time, cooling time, measured activity ± error)  
+- Produces a standardized **CSV file** containing coefficients and activity data for unfolding
+  ![Data Preparation UI](./fig/fig4.png)  
+
+### Input
+1. Cross-section data file (formatted from ENDF/B, IRDF, etc.)  
+   - The first 8 lines contain metadata (library version, isotope, reaction type, etc.)  
+   - Numerical cross-section values are read **starting from line 9**  
+2. Energy group boundary file (defines group structure and prior spectrum)
+   - The first line is header information  
+   - Group boundary data are read **starting from line 2**
+
+### Processing
+- Interpolates/averages cross-section values over energy groups  
+- Applies decay constants and calculates coefficients independent of flux  
+- Supports writing multiple activation reactions into the same CSV file,  
+  enabling **multi-material spectrum unfolding** in the inversion step  
+
+### Output
+- A CSV file with:
+  - Group-wise coefficients  
+  - Measured activities and associated uncertainties  
+- Serves as the input matrix for the **Spectrum Inversion** module
+
 
 ---
 
