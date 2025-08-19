@@ -49,12 +49,24 @@ pip install -r requirements.txt
 ---
 ## 📂 Repository Structure
 ```
-SPECKIT/
-├── src/               # Source code
-├── examples/          # Example datasets and scripts
-├── fig/            # Figures, logos, mascot
-         
-└── README.md          # Project documentation
+SpecKit/
+├── benchmark/                     # Performance verification cases
+│    ├── double_peak/              # Double-peak spectrum case
+│    │    ├── mcnp_input/          # MCNP input files
+│    │    └── results/             # Unfolding results (CSV, figures, tables)
+│    └── quasi_single_peak/        # Quasi-single-peak spectrum case
+│         ├── mcnp_input/          # MCNP input files
+│         └── results/             # Unfolding results (CSV, figures, tables)
+├── cross_section/                 # Cross-section datasets (ENDF/B, IRDF formatted files)
+├── fig/                           # Figures (example plots, documentation images)
+├── src/                           # Source code (core Python scripts)
+│    ├── cross_section_input_generator.py
+│    ├── neutron_spectrum_solver.py
+│    └── spectrum_errorbar_viewer.py
+├── .gitignore                     # Git ignore rules
+├── LICENSE                        # License file (MIT)
+└── README.md                      # Project description and usage guide
+
 ```
 ---
 
