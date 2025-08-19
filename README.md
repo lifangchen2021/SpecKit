@@ -223,7 +223,67 @@ Error metric: ABS(calculate − true) / true
 ![Data Preparation UI](./fig/fig12.png)
 
 ---
+### (2) Quasi-Single-Peak Spectrum  
 
+The error test was performed by comparing the **activation reaction data** generated from the simulated spectrum (**True Spectrum**) with that from the **Prior Spectrum**, in order to evaluate the **sensitivity and accuracy** of the unfolding algorithm in different energy regions.  
+
+Table 3 summarizes the relative error of the unfolded spectra, defined as:  
+
+**ABS(calculate − true) / true**,  
+
+for ten activation products across three representative energy intervals:  
+- Thermal region: 1×10⁻¹¹ – 2.5×10⁻⁸ MeV  
+- Epithermal/Intermediate region: 2.5×10⁻⁸ – 1 MeV  
+- Fast region: 1 – 30 MeV  
+
+Key differences between the **Prior Spectrum** and the **True Spectrum** include:  
+- **Proton beam current**: the prior spectrum assumes about twice the current compared to the true spectrum.  
+- **Geometry setup**: the prior spectrum ignores structural effects such as the concrete layer, leading to deviations in neutron moderation.  
+
+Table 3 further shows the unfolding errors for each activation product, both individually and in combined iteration.  
+- **Blue shading** indicates smaller errors compared to the prior spectrum.  
+- **Red shading** indicates larger errors compared to the prior spectrum.  
+
+Results demonstrate that the unfolding code **SpecKit** can effectively correct prior-spectrum anomalies caused by proton current mismatch.  
+
+In detail:  
+- **Thermal region (1×10⁻¹¹–2.5×10⁻⁸ MeV):** Errors are significantly amplified (1.076–3.875×), mainly due to cross-section sensitivity.  
+- **Intermediate region (2.5×10⁻⁸–1 MeV):** Errors converge within 0.056–0.548, showing improved stability.  
+- **Fast region (1–30 MeV):** Errors are the lowest (<0.014 for most), except **Au-197** and **Co-59**, which remain higher due to (n,γ) cross-section effects across energy scales.  
+
+Notably, **multi-material combinations** effectively suppress extreme errors in the thermal region and stabilize reconstruction in the intermediate and fast regions.  
+
+---
+
+#### Table 3. Relative Error of Unfolded Spectrum by Energy Region  
+
+**(a) Group 1: Prior Spectrum vs. Five Activation Products**
+
+| Energy (MeV)      | Prior Spectrum | Au-197 | Fe-56 | Al-27 | Ni-58 | Fe-54 |
+|--------------------|----------------|--------|-------|-------|-------|-------|
+| 1E-11 ~ 2.5E-8    | 13.105         | 1.076  | 3.852 | 3.852 | 3.873 | 3.875 |
+| 2.5E-8 ~ 1        | 2.071          | 0.548  | 0.056 | 0.056 | 0.061 | 0.061 |
+| 1 ~ 30            | 1.867          | 0.578  | 0.014 | 0.014 | 0.010 | 0.009 |
+
+**(b) Group 2: Five Additional Activation Products**
+
+| Energy (MeV)      | Cu-63 | Ti-48 | Na-23 | Co-59 | S-32 | TOTAL (10 products) |
+|--------------------|-------|-------|-------|-------|------|----------------------|
+| 1E-11 ~ 2.5E-8    | 3.853 | 3.854 | 2.541 | 1.236 | 3.875| 0.227                |
+| 2.5E-8 ~ 1        | 0.056 | 0.057 | 0.223 | 0.513 | 0.061| 0.180                |
+| 1 ~ 30            | 0.014 | 0.013 | 0.274 | 0.545 | 0.009| 0.077                |
+
+---
+![Data Preparation UI](./fig/fig14.png)
+**Figure 13.** Comparison of the unfolded spectra with the true simulated spectrum.  
+The unfolded results match closely above 1 MeV, while deviations rapidly increase toward lower energy ranges.  
+
+
+
+
+
+
+---
 ## 📝 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
