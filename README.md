@@ -87,8 +87,29 @@ This module prepares the **reaction cross-section data** and **energy group stru
   - Group-wise coefficients  
   - Measured activities and associated uncertainties  
 - Serves as the input matrix for the **Spectrum Inversion** module
+---
+## 🧩 Module 2: Spectrum Inversion
+**Script:** `neutron_spectrum_solver.py`
+ ![Data Preparation UI](./fig/fig5.png) 
 
+This module performs the **core spectrum unfolding algorithm**.  
+It takes the prepared reaction matrix (A) and activity vector (b) from the Data Preparation step,  
+and reconstructs the unknown neutron spectrum (x).
 
+### Method
+- Based on **least-squares minimization**  
+- Uses **gradient descent optimization** with **log-smoothness regularization** to stabilize the solution  
+- Default convergence threshold is automatically calculated using the **chi-square distribution** (95% confidence level), ensuring statistical interpretability  
+
+### Features
+- **Developer Mode**: adjust learning rate, max iterations, and loss threshold  
+- **Real-time plotting**: visualize loss convergence and spectrum reconstruction  
+- **Multiple runs**: supports Monte Carlo perturbations of activity data (b ± σ) to analyze uncertainty  
+
+### Output
+- CSV file of reconstructed neutron spectrum (per run)  
+- Convergence curves and spectrum plots (exportable as PNG/PDF)  
+ ![Data Preparation UI](./fig/fig6.png) 
 ---
 
 ## 📂 Repository Structure
