@@ -7,30 +7,39 @@
 ---
 
 ## 📖 Introduction
-SPECKIT (Spectrum Unfolding Kit) is a Python-based open-source software designed for reconstructing neutron energy spectra from activation data. It provides researchers with an accessible, modular, and transparent framework for spectrum unfolding, making it easier to integrate into both academic research and applied nuclear technology workflows.
+**SpecKit** is an open-source software toolkit designed for **neutron spectrum unfolding using activation reactions**.  
+It integrates **reaction matrix preparation, spectrum inversion, uncertainty analysis, and visualization** into a single platform, supporting both **GUI operations and standardized CSV I/O**, making it suitable for research and educational applications.  
 
-The toolkit was developed as part of research on **neutron activation methods** for estimating flux distributions in quasi-monoenergetic neutron fields. The work is described in detail in the accompanying publication:
+Compared with classical unfolding codes (e.g., SAND-II, MAXED, GRAVEL), SpecKit highlights:  
+- Built-in **log-smoothness regularization** to stabilize the solution  
+- **GUI interface and standardized CSV I/O** to reduce the learning curve  
+- **Minimal dataset with one-click reproducibility** to ensure cross-platform reproducibility  
+- **Uncertainty quantification embedded in the workflow**, eliminating the need for separate post-processing  
 
-> Chen, L.-F. *利用中子活化反應推估擬單能靶中子場之通量分佈*. (Manuscript in preparation)
+The core algorithm is based on:  
+- Least-squares residual minimization  
+- Log-smoothness regularization  
+- Gradient descent optimization  
+- Multiple fittings and Monte Carlo sampling for uncertainty estimation  
+
+> SpecKit is not intended to replace classical codes, but rather to provide a **modern complement**: integrating unfolding and uncertainty quantification into a reproducible and user-friendly workflow for both research and teaching.
 
 ---
+## 📦 Dependencies
 
-## ✨ Features
-- 📊 Implements unfolding algorithms including:
-  - SAND-II
-  - MAXED (Maximum Entropy)
-  - GRAVEL (Generalized Least-Squares)
-- ⚡ Simple command-line interface (CLI) and Python API
-- 🧰 Modular design for extensibility
-- 📈 Built-in plotting for neutron spectrum visualization
-- 🐱 Friendly mascot to guide your journey 😉
+- Python >= 3.8  
+- numpy  
+- matplotlib  
+- pandas  
+- scipy  
+- tkinter (pre-installed in most Python distributions)  
 
 ---
 
 ## 📦 Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/speckit.git
+git clone https://github.com/lifangchen2021/speckit.git
 cd speckit
 
 # Install dependencies
@@ -38,6 +47,7 @@ pip install -r requirements.txt
 ```
 
 ---
+
 
 ## 🚀 Usage
 ### Command Line Example
@@ -61,17 +71,14 @@ spectrum.plot()
 SPECKIT/
 ├── src/               # Source code
 ├── examples/          # Example datasets and scripts
-├── images/            # Figures, logos, mascot
-├── tests/             # Unit tests
+├── fig/            # Figures, logos, mascot
+         
 └── README.md          # Project documentation
 ```
 
 ---
 
-## 📚 References
-- M. Reginatto, P. Goldhagen, S. Neumann, "Spectrum unfolding, sensitivity analysis and propagation of uncertainties with the maximum entropy deconvolution code MAXED," *Nucl. Instrum. Methods Phys. Res. A*, vol. 476, pp. 242–246, 2002. [https://doi.org/10.1016/S0168-9002(01)01439-5](https://doi.org/10.1016/S0168-9002(01)01439-5)
-- SAND-II, "A Computer Program for Neutron Flux Spectra Determination by Multiple Foil Activation," Argonne National Laboratory, ANL-6984, 1964.
-- D. L. Smith, "GRAVEL: A Generalized Least-Squares Program for Neutron Spectrum Unfolding," Argonne National Laboratory Report, 1990.
+
 
 ---
 
