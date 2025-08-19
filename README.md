@@ -149,6 +149,49 @@ This module processes the results from multiple spectrum inversion runs and gene
 ### Output
 - CSV file containing group-wise mean flux and standard deviation  
 - Error-band plot (Mean ± Std Dev), exportable as an image  
+---
+## Benchmarks — MCNP
+
+### (1) Double-Peak Spectrum
+
+For the performance verification study, the **true spectrum** was generated using the MCNP code.  
+The setup simulates a proton beam impinging on a beryllium target (p + Be), followed by a 10 cm water layer and a 5 cm concrete layer.  
+The neutron spectrum was tallied on a spherical surface with a 100 cm radius centered on the target (F2 tally).  
+
+A corresponding **prior spectrum** was also constructed with a similar shape but different moderation conditions.  
+In this case, only a 10 cm water layer was placed outside the Be target (no concrete), while the tally location remained the same.  
+This spectrum was used as the prior input for sensitivity testing of the unfolding algorithm.  
+![Data Preparation UI](./fig/fig8.png)
+**Figure 8** shows the MCNP geometry models for the true and prior spectra.  
+- Pink: Be target  
+- Blue: water  
+- Yellow: concrete  
+- White: vacuum  
+![Data Preparation UI](./fig/fig9.png)
+**Figure 9** compares the true spectrum and prior spectrum.  
+Due to the additional concrete layer in the true spectrum case, neutron energies were further moderated,  
+resulting in a clear shift toward the lower energy region.
+
+### (2) Quasi-Single-Peak Spectrum
+
+For the error-sensitivity analysis of spectrum unfolding, the **true spectrum** was generated using the MCNP code by simulating neutrons produced from a proton beam impinging on a beryllium target (p + Be).  
+A corresponding **prior spectrum** with a similar spectral shape was also constructed as the initial input condition for unfolding tests.  
+
+The difference between the prior and true spectra mainly arises from two sources:  
+1. **Proton beam current setting** — The prior spectrum assumes twice the proton beam current compared with the true spectrum, resulting in higher flux at the main energy peak and across the medium-to-high energy region.  
+2. **Geometrical/material differences** — In the prior spectrum model, an additional 0.6 cm water layer was placed in front of the measurement position, and the 0.2 cm surface concrete layer (present in the true spectrum) was removed, eliminating part of the neutron moderation and scattering effect.  
+
+The neutron flux was tallied using an F4 tally within a thin spherical shell (radius 15.0–15.5 cm) centered at the Be target.  
+![Data Preparation UI](./fig/fig10.png)
+**Figure 10** illustrates the MCNP geometry setup for the true and prior spectra.  
+- Red: Be target  
+- Blue: water  
+- Yellow: air  
+- Green: concrete  
+![Data Preparation UI](./fig/fig11.png)
+**Figure 11** shows the comparison between the true and prior spectra.  
+Because both material differences and neutron yield variations are present, the flux differences between energy groups become more pronounced compared with the double-peak case.
+
 
 ---
 
