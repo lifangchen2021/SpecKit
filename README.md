@@ -256,22 +256,8 @@ Notably, **multi-material combinations** effectively suppress extreme errors in 
 ---
 
 #### Table 3. Relative Error of Unfolded Spectrum by Energy Region  
+![Data Preparation UI](./fig/fig15.png)
 
-**(a) Group 1: Prior Spectrum vs. Five Activation Products**
-
-| Energy (MeV)      | Prior Spectrum | Au-197 | Fe-56 | Al-27 | Ni-58 | Fe-54 |
-|--------------------|----------------|--------|-------|-------|-------|-------|
-| 1E-11 ~ 2.5E-8    | 13.105         | 1.076  | 3.852 | 3.852 | 3.873 | 3.875 |
-| 2.5E-8 ~ 1        | 2.071          | 0.548  | 0.056 | 0.056 | 0.061 | 0.061 |
-| 1 ~ 30            | 1.867          | 0.578  | 0.014 | 0.014 | 0.010 | 0.009 |
-
-**(b) Group 2: Five Additional Activation Products**
-
-| Energy (MeV)      | Cu-63 | Ti-48 | Na-23 | Co-59 | S-32 | TOTAL (10 products) |
-|--------------------|-------|-------|-------|-------|------|----------------------|
-| 1E-11 ~ 2.5E-8    | 3.853 | 3.854 | 2.541 | 1.236 | 3.875| 0.227                |
-| 2.5E-8 ~ 1        | 0.056 | 0.057 | 0.223 | 0.513 | 0.061| 0.180                |
-| 1 ~ 30            | 0.014 | 0.013 | 0.274 | 0.545 | 0.009| 0.077                |
 
 ---
 ![Data Preparation UI](./fig/fig14.png)
