@@ -1,0 +1,39 @@
+#LIBRARY    ENDF/B-VI
+#REACTION   NI-58(N,P)CO-58,SIG
+#NUCLEUS    Ni-58
+#MF         3
+#MT         103
+#EN-MIN     500000
+#EN-MAX     1.5e+08
+#E,eV        Sig,b        Interpolation
+ 500000      0            Lin-Lin
+ 1E+06       0.0015877    Lin-Lin
+ 1.5E+06     0.013754     Lin-Lin
+ 2E+06       0.039363     Lin-Lin
+ 2.5E+06     0.10854      Lin-Lin
+ 3E+06       0.19457      Lin-Lin
+ 3.5E+06     0.27563      Lin-Lin
+ 4E+06       0.35607      Lin-Lin
+ 4.5E+06     0.40554      Lin-Lin
+ 5E+06       0.44473      Lin-Lin
+ 5.5E+06     0.51163      Lin-Lin
+ 6E+06       0.58         Lin-Lin
+ 6.5E+06     0.606        Lin-Lin
+ 7E+06       0.615        Lin-Lin
+ 7.5E+06     0.622        Lin-Lin
+ 8E+06       0.627        Lin-Lin
+ 8.5E+06     0.628        Lin-Lin
+ 9E+06       0.627        Lin-Lin
+ 1E+07       0.613        Lin-Lin
+ 1.05E+07    0.605        Lin-Lin
+ 1.15E+07    0.575        Lin-Lin
+ 1.2E+07     0.552        Lin-Lin
+ 1.25E+07    0.51607      Lin-Lin
+ 1.3E+07     0.479        Lin-Lin
+ 1.45E+07    0.3216       Lin-Lin
+ 1.6E+07     0.1899       Lin-Lin
+ 1.75E+07    0.1211       Lin-Lin
+ 2E+07       0.07272      Lin-Lin
+ 2E+07       0            Lin-Lin
+ 1.5E+08     0            Lin-Lin
+#END

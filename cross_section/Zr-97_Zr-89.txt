@@ -1,0 +1,49 @@
+https://www-nds.iaea.org/exfor/servlet/E4sGetTabSect?SectID=21408226&req=64404&PenSectID=26245395
+#LIBRARY    ENDF/B-VIII.1
+#REACTION   ZR-90(N,2N)ZR-89,SIG
+#NUCLEUS    Zr-90
+#MF         3
+#MT         16
+#EN-MIN     1.21043e+07
+#EN-MAX     2e+07
+#E,eV        Sig,b        Interpolation
+ 1.21043E+07 3.1099E-05   Lin-Lin
+ 1.22E+07    0.010295     Lin-Lin
+ 1.225E+07   0.015607     Lin-Lin
+ 1.23E+07    0.022553     Lin-Lin
+ 1.235E+07   0.03104      Lin-Lin
+ 1.24E+07    0.040966     Lin-Lin
+ 1.245E+07   0.052228     Lin-Lin
+ 1.25E+07    0.064717     Lin-Lin
+ 1.255E+07   0.078323     Lin-Lin
+ 1.26E+07    0.092937     Lin-Lin
+ 1.27E+07    0.12475      Lin-Lin
+ 1.28E+07    0.15933      Lin-Lin
+ 1.29E+07    0.1959       Lin-Lin
+ 1.3E+07     0.23378      Lin-Lin
+ 1.33E+07    0.34971      Lin-Lin
+ 1.34E+07    0.38774      Lin-Lin
+ 1.35E+07    0.42497      Lin-Lin
+ 1.36E+07    0.4612       Lin-Lin
+ 1.37E+07    0.49629      Lin-Lin
+ 1.38E+07    0.53015      Lin-Lin
+ 1.39E+07    0.56271      Lin-Lin
+ 1.4E+07     0.59396      Lin-Lin
+ 1.41E+07    0.62389      Lin-Lin
+ 1.43E+07    0.67982      Lin-Lin
+ 1.451E+07   0.73317      Lin-Lin
+ 1.47E+07    0.77704      Lin-Lin
+ 1.49E+07    0.81907      Lin-Lin
+ 1.51E+07    0.85727      Lin-Lin
+ 1.54E+07    0.90821      Lin-Lin
+ 1.57E+07    0.95258      Lin-Lin
+ 1.6E+07     0.99139      Lin-Lin
+ 1.64E+07    1.0359       Lin-Lin
+ 1.68E+07    1.0737       Lin-Lin
+ 1.73E+07    1.113        Lin-Lin
+ 1.78E+07    1.1452       Lin-Lin
+ 1.84E+07    1.1759       Lin-Lin
+ 1.9E+07     1.199        Lin-Lin
+ 1.97E+07    1.2171       Lin-Lin
+ 2E+07       1.222        Lin-Lin
+#END

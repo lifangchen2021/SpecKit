@@ -1,0 +1,56 @@
+#LIBRARY    INDEN-Aug2023
+#REACTION   CU-65(N,2N)CU-64,SIG
+#NUCLEUS    Cu-65
+#MF         3
+#MT         16
+#EN-MIN     1.00634e+07
+#EN-MAX     1.5e+08
+#E,eV        Sig,b        Interpolation
+ 1.00634E+07 0            Lin-Lin
+ 1.02E+07    0.0049418    Lin-Lin
+ 1.03E+07    0.010769     Lin-Lin
+ 1.04E+07    0.019921     Lin-Lin
+ 1.05E+07    0.032306     Lin-Lin
+ 1.06E+07    0.047781     Lin-Lin
+ 1.07E+07    0.066148     Lin-Lin
+ 1.08E+07    0.087173     Lin-Lin
+ 1.09E+07    0.11058      Lin-Lin
+ 1.1E+07     0.13609      Lin-Lin
+ 1.11E+07    0.16338      Lin-Lin
+ 1.12E+07    0.19213      Lin-Lin
+ 1.13E+07    0.22205      Lin-Lin
+ 1.14E+07    0.25282      Lin-Lin
+ 1.19E+07    0.41048      Lin-Lin
+ 1.21E+07    0.47148      Lin-Lin
+ 1.23E+07    0.52964      Lin-Lin
+ 1.25E+07    0.58433      Lin-Lin
+ 1.27E+07    0.63523      Lin-Lin
+ 1.29E+07    0.68222      Lin-Lin
+ 1.31E+07    0.72536      Lin-Lin
+ 1.33E+07    0.76477      Lin-Lin
+ 1.35E+07    0.80067      Lin-Lin
+ 1.38E+07    0.84847      Lin-Lin
+ 1.413E+07   0.89359      Lin-Lin
+ 1.448E+07   0.93407      Lin-Lin
+ 1.488E+07   0.97252      Lin-Lin
+ 1.53E+07    1.0054       Lin-Lin
+ 1.58E+07    1.0365       Lin-Lin
+ 1.63E+07    1.0601       Lin-Lin
+ 1.68E+07    1.0774       Lin-Lin
+ 1.74E+07    1.0903       Lin-Lin
+ 1.8E+07     1.0944       Lin-Lin
+ 1.85E+07    1.0894       Lin-Lin
+ 1.89E+07    1.0779       Lin-Lin
+ 1.92E+07    1.0628       Lin-Lin
+ 1.94E+07    1.0485       Lin-Lin
+ 1.96E+07    1.0295       Lin-Lin
+ 1.98E+07    1.0042       Lin-Lin
+ 1.99E+07    0.98833      Lin-Lin
+ 2E+07       0.96976      Lin-Lin
+ 2E+07       0            Lin-Lin
+ 1.5E+08     0            Lin-Lin
+#END
+
+Page generated: 2025-05-29,08:27:42 by E4sGetTabSect on localhost [fwd:www-nds.iaea.org]
+Project: "Multi-platform EXFOR-CINDA-ENDF", V.Zerkin, IAEA-NDS, 1999-2023
+Request from: 127.0.0.1 [fwd:118.163.34.110,172.69.221.92]

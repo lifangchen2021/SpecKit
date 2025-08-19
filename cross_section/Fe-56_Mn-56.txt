@@ -1,0 +1,112 @@
+#LIBRARY    ENDF/B-VIII.0
+#REACTION   FE-56(N,P)MN-56,SIG
+#NUCLEUS    Fe-56
+#MF         3
+#MT         103
+#EN-MIN     2.96512e+06
+#EN-MAX     1.5e+08
+#E,eV        Sig,b        Interpolation
+ 2.96512E+06 0            Lin-Lin
+ 2.99221E+06 2.45897E-11  Lin-Lin
+ 3E+06       3.46338E-11  Lin-Lin
+ 3.07762E+06 8.32793E-11  Lin-Lin
+ 3.18097E+06 2.00349E-10  Lin-Lin
+ 3.18413E+06 2.04986E-10  Lin-Lin
+ 3.2E+06     2.36186E-10  Lin-Lin
+ 3.3067E+06  3.35428E-10  Lin-Lin
+ 3.31226E+06 3.40872E-10  Lin-Lin
+ 3.4E+06     4.37734E-10  Lin-Lin
+ 3.42765E+06 4.63498E-10  Lin-Lin
+ 3.4602E+06  4.93867E-10  Lin-Lin
+ 3.5E+06     5.38502E-10  Lin-Lin
+ 3.51588E+06 1.27422E-09  Lin-Lin
+ 3.51629E+06 1.2948E-09   Lin-Lin
+ 3.6E+06     5.84347E-09  Lin-Lin
+ 3.7E+06     4.16013E-08  Lin-Lin
+ 3.8E+06     4.18839E-07  Lin-Lin
+ 3.9E+06     1.29763E-06  Lin-Lin
+ 4E+06       5.24129E-06  Lin-Lin
+ 4.1E+06     1.37752E-05  Lin-Lin
+ 4.2E+06     2.89429E-05  Lin-Lin
+ 4.3E+06     5.34696E-05  Lin-Lin
+ 4.4E+06     9.0979E-05   Lin-Lin
+ 4.5E+06     0.000143149  Lin-Lin
+ 4.6E+06     0.000222673  Lin-Lin
+ 4.7E+06     0.000335503  Lin-Lin
+ 4.8E+06     0.0004918    Lin-Lin
+ 4.9E+06     0.000707604  Lin-Lin
+ 5E+06       0.000998092  Lin-Lin
+ 5.2E+06     0.00190758   Lin-Lin
+ 5.4E+06     0.00346886   Lin-Lin
+ 5.5E+06     0.00458343   Lin-Lin
+ 5.7E+06     0.00760927   Lin-Lin
+ 6E+06       0.013426     Lin-Lin
+ 6.3E+06     0.0191733    Lin-Lin
+ 6.5E+06     0.0225882    Lin-Lin
+ 6.7E+06     0.0264315    Lin-Lin
+ 7E+06       0.0303618    Lin-Lin
+ 7.25E+06    0.033907     Lin-Lin
+ 7.5E+06     0.0378235    Lin-Lin
+ 8E+06       0.0462149    Lin-Lin
+ 8.5E+06     0.0540793    Lin-Lin
+ 9E+06       0.0606614    Lin-Lin
+ 9.5E+06     0.0667464    Lin-Lin
+ 1E+07       0.0729882    Lin-Lin
+ 1.05E+07    0.0799935    Lin-Lin
+ 1.1E+07     0.0877296    Lin-Lin
+ 1.125E+07   0.091766     Lin-Lin
+ 1.15E+07    0.0959037    Lin-Lin
+ 1.18E+07    0.100757     Lin-Lin
+ 1.2E+07     0.103795     Lin-Lin
+ 1.25E+07    0.11037      Lin-Lin
+ 1.28E+07    0.113277     Lin-Lin
+ 1.3E+07     0.114678     Lin-Lin
+ 1.32E+07    0.115588     Lin-Lin
+ 1.34E+07    0.115987     Lin-Lin
+ 1.35E+07    0.116003     Lin-Lin
+ 1.37E+07    0.115633     Lin-Lin
+ 1.39E+07    0.114774     Lin-Lin
+ 1.4E+07     0.114034     Lin-Lin
+ 1.42E+07    0.112607     Lin-Lin
+ 1.45E+07    0.109557     Lin-Lin
+ 1.5E+07     0.102932     Lin-Lin
+ 1.6E+07     0.087633     Lin-Lin
+ 1.65E+07    0.0800259    Lin-Lin
+ 1.8E+07     0.0611536    Lin-Lin
+ 1.9E+07     0.0523912    Lin-Lin
+ 2E+07       0.04606      Lin-Lin
+ 2.1E+07     0.0382963    Lin-Lin
+ 2.2E+07     0.0359995    Lin-Lin
+ 2.4E+07     0.0320504    Lin-Lin
+ 2.57E+07    0.0283843    Lin-Lin
+ 2.8E+07     0.0266979    Lin-Lin
+ 3E+07       0.0227609    Lin-Lin
+ 3.2E+07     0.0201927    Lin-Lin
+ 3.4E+07     0.018671     Lin-Lin
+ 3.6E+07     0.015901     Lin-Lin
+ 3.8E+07     0.0140009    Lin-Lin
+ 4E+07       0.0127746    Lin-Lin
+ 4.5E+07     0.0107073    Lin-Lin
+ 5E+07       0.00782906   Lin-Lin
+ 5.25E+07    0.00677251   Lin-Lin
+ 5.5E+07     0.00576814   Lin-Lin
+ 6E+07       0.00497691   Lin-Lin
+ 6.5E+07     0.0040387    Lin-Lin
+ 7E+07       0.00342924   Lin-Lin
+ 7.5E+07     0.00325382   Lin-Lin
+ 8E+07       0.00255825   Lin-Lin
+ 9E+07       0.0021441    Lin-Lin
+ 9.6E+07     0.00204725   Lin-Lin
+ 1E+08       0.00131615   Lin-Lin
+ 1.1E+08     0.00173623   Lin-Lin
+ 1.2E+08     0.00128356   Lin-Lin
+ 1.25E+08    0.00111216   Lin-Lin
+ 1.3E+08     0.00127287   Lin-Lin
+ 1.4E+08     0.00116257   Lin-Lin
+ 1.5E+08     0.000954864  Lin-Lin
+ 1.5E+08     0            Lin-Lin
+#END
+
+Page generated: 2025-05-29,08:22:35 by E4sGetTabSect on localhost [fwd:www-nds.iaea.org]
+Project: "Multi-platform EXFOR-CINDA-ENDF", V.Zerkin, IAEA-NDS, 1999-2023
+Request from: 127.0.0.1 [fwd:118.163.34.110,172.69.221.92]

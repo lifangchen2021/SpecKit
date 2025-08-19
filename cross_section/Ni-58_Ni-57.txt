@@ -1,0 +1,47 @@
+#LIBRARY    ENDF/B-VIII.1
+#REACTION   NI-58(N,2N)NI-57,SIG
+#NUCLEUS    Ni-58
+#MF         3
+#MT         16
+#EN-MIN     1.24298e+07
+#EN-MAX     1.5e+08
+#E,eV        Sig,b        Interpolation
+ 1.24298E+07 0            Lin-Lin
+ 1.26E+07    0.0006698    Lin-Lin
+ 1.265E+07   0.0010435    Lin-Lin
+ 1.27E+07    0.0014418    Lin-Lin
+ 1.28E+07    0.0023155    Lin-Lin
+ 1.29E+07    0.0032974    Lin-Lin
+ 1.3E+07     0.0043928    Lin-Lin
+ 1.31E+07    0.005606     Lin-Lin
+ 1.32E+07    0.0069394    Lin-Lin
+ 1.33E+07    0.0083936    Lin-Lin
+ 1.34E+07    0.0099664    Lin-Lin
+ 1.35E+07    0.011653     Lin-Lin
+ 1.36E+07    0.013447     Lin-Lin
+ 1.37E+07    0.015337     Lin-Lin
+ 1.38E+07    0.01731      Lin-Lin
+ 1.39E+07    0.019351     Lin-Lin
+ 1.44E+07    0.029923     Lin-Lin
+ 1.46E+07    0.033973     Lin-Lin
+ 1.47E+07    0.035897     Lin-Lin
+ 1.48E+07    0.037737     Lin-Lin
+ 1.49E+07    0.039488     Lin-Lin
+ 1.5E+07     0.041145     Lin-Lin
+ 1.51E+07    0.042704     Lin-Lin
+ 1.52E+07    0.044167     Lin-Lin
+ 1.53E+07    0.045534     Lin-Lin
+ 1.55E+07    0.048        Lin-Lin
+ 1.57E+07    0.05014      Lin-Lin
+ 1.59E+07    0.052006     Lin-Lin
+ 1.62E+07    0.0544       Lin-Lin
+ 1.66E+07    0.057083     Lin-Lin
+ 1.84E+07    0.067476     Lin-Lin
+ 2E+07       0.077416     Lin-Lin
+ 2E+07       0            Lin-Lin
+ 1.5E+08     0            Lin-Lin
+#END
+
+Page generated: 2025-05-29,08:30:08 by E4sGetTabSect on localhost [fwd:www-nds.iaea.org]
+Project: "Multi-platform EXFOR-CINDA-ENDF", V.Zerkin, IAEA-NDS, 1999-2023
+Request from: 127.0.0.1 [fwd:118.163.34.110,172.69.221.92]
