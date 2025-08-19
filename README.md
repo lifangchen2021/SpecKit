@@ -264,8 +264,26 @@ Notably, **multi-material combinations** effectively suppress extreme errors in 
 **Figure 13.** Comparison of the unfolded spectra with the true simulated spectrum.  
 The unfolded results match closely above 1 MeV, while deviations rapidly increase toward lower energy ranges.  
 
+---
+## 🔽 Download and Installation
 
+A precompiled executable file (**SpecKit.exe**) is provided for users who prefer to run the program without compiling the source code.  
 
+- Download the latest release from the [Releases page](../../releases).  
+- Place the executable in any working directory.  
+- Run `SpecKit.exe` directly (no installation required).  
+
+> ⚠️ Note: The `.exe` file is built for **Windows (64-bit)**.  
+For other platforms, please use the Python source code provided in this repository.  
+
+---
+
+## 🚀 Usage
+
+### Run with Executable
+Simply double-click the `SpecKit.exe` file or run from terminal:
+```bash
+SpecKit.exe
 
 
 
