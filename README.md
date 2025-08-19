@@ -217,21 +217,10 @@ This observation is consistent with theoretical expectations: the combination of
 
 **Table 2.** Relative error of unfolded spectra in different energy regions  
 Error metric: ABS(calculate − true) / true  
-
-| Energy (MeV)      | Prior | Au-197 | Fe-56 | Al-27 | Ni-58 | Fe-54 |
-|-------------------|-------|--------|-------|-------|-------|-------|
-| 1E-11 ~ 2.5E-8    | 0.6960| 0.4857 | 0.7746| 0.7780| 0.7621| 0.7613|
-| 2.5E-8 ~ 1        | 0.1670| 0.3662 | 0.1352| 0.1484| 0.0873| 0.0843|
-| 1 ~ 30            | 0.2589| 0.3149 | 0.0671| 0.0813| 0.0155| 0.0122|
-
-| Energy (MeV)      | Cu-63 | Ti-48 | Na-23 | Co-59 | S-32  | TOTAL (10 products) |
-|-------------------|-------|-------|-------|-------|-------|---------------------|
-| 1E-11 ~ 2.5E-8    | 0.7721| 0.7766| 0.4564| 0.6205| 0.7609| 0.1473              |
-| 2.5E-8 ~ 1        | 0.1255| 0.1429| 1.0707| 0.4560| 0.0829| 0.0868              |
-| 1 ~ 30            | 0.0567| 0.0754| 1.2337| 0.5706| 0.0107| 0.0113              |
+![Data Preparation UI](./fig/fig13.png)
 
 **Figure 12** shows the comparison between the true spectrum and the unfolded spectrum. In the double-peak spectrum case, the use of all ten activation products (TOTAL) clearly outperforms individual reconstructions. The overall curve reproduces the peak positions and relative intensities much more accurately, with deviations in the medium-to-high energy range significantly reduced. Although some local discrepancies remain at the low-energy end due to cross-section sensitivity limitations, the combined multi-reaction approach effectively suppresses systematic deviations and improves both **accuracy** and **robustness** across the entire energy range.
-
+![Data Preparation UI](./fig/fig12.png)
 
 ---
 
