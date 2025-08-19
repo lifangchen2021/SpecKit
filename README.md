@@ -47,7 +47,16 @@ pip install -r requirements.txt
 ```
 
 ---
-
+## 📂 Repository Structure
+```
+SPECKIT/
+├── src/               # Source code
+├── examples/          # Example datasets and scripts
+├── fig/            # Figures, logos, mascot
+         
+└── README.md          # Project documentation
+```
+---
 
 ## 🚀 Usage
 ## 🧩 Module 1: Data Preparation
@@ -111,20 +120,23 @@ and reconstructs the unknown neutron spectrum (x).
 - Convergence curves and spectrum plots (exportable as PNG/PDF)  
  ![Data Preparation UI](./fig/fig6.png) 
 ---
+## 🧩 Module 3: Spectrum Error Bar Viewer
+**Script:** `spectrum_errorbar_viewer.py`
+![Data Preparation UI](./fig/fig7.png)
+This module processes the results from multiple spectrum inversion runs and generates statistical summaries with error bars.
 
-## 📂 Repository Structure
-```
-SPECKIT/
-├── src/               # Source code
-├── examples/          # Example datasets and scripts
-├── fig/            # Figures, logos, mascot
-         
-└── README.md          # Project documentation
-```
+### Features
+- Loads multiple inversion results (CSV)  
+- Calculates **mean flux** and **standard deviation** for each energy group  
+- Computes **total flux**, its standard deviation, and relative standard deviation (RSD)  
+- Visualizes results as error-band plots (Mean ± Std Dev) on log–log scale  
 
----
+### Input
+- CSV files from multiple spectrum inversion runs  
 
-
+### Output
+- CSV file containing group-wise mean flux and standard deviation  
+- Error-band plot (Mean ± Std Dev), exportable as an image  
 
 ---
 
