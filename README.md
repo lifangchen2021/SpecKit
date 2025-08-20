@@ -306,17 +306,6 @@ A precompiled executable file (**SpecKit.exe**) is provided for users who prefer
 For other platforms, please use the Python source code provided in this repository.  
 
 ---
-
-## 🚀 Usage
-
-### Run with Executable
-Simply double-click the `SpecKit.exe` file or run from terminal:
-```bash
-SpecKit.exe
-
-
-
----
 ## 📝 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
