@@ -71,6 +71,35 @@ SpecKit/
 ---
 
 ## 🚀 Usage
+### Activation Material Selection and ASTM Standards
+
+To perform neutron spectrum unfolding simulations and experimental analysis, this study employs a set of commonly used neutron activation materials, covering reactions from the thermal to fast neutron energy range. For each material, the primary activation reaction, resulting isotope and half-life, nuclear data source, and ASTM standard reference are summarized in **Table 1**.  
+
+The selected reactions include (n,γ), (n,p), and (n,α), with materials chosen based on accessibility, stability, and compliance with international ASTM standards such as **E720**, **E264**, and **E263**. Reaction cross-section data are mainly referenced from **ENDF/B-VIII.0**, **ENDF/B-VI**, and **IRDF-2002G**.  
+
+The chosen set of materials spans:  
+- **Thermal neutron region** (e.g., Au-197, Na-23, Co-59): high cross-sections and sensitivity  
+- **Fast neutron region** (e.g., Ni-58, Fe-56, Ti-48): suitable for capturing spectral peaks and tail variations  
+
+By combining these materials, a comprehensive response matrix sensitive to a wide energy-group structure is constructed, forming the basis for unfolding input and error-sensitivity evaluation.  
+
+### Table 1. Activation Materials and ASTM Standards
+
+| Material | Reaction | Product | Half-life (h) | Data Library    | ASTM Standard |
+|----------|----------|---------|---------------|----------------|---------------|
+| Au-197   | (n,γ)    | Au-198  | 64.56         | ENDF/B-VIII.1  | E720-16       |
+| Fe-56    | (n,p)    | Mn-56   | 2.57878       | ENDF/B-VIII.0  | E720-16       |
+| Al-27    | (n,α)    | Na-24   | 15            | IRDF-2002G     | E266-92       |
+| Ni-58    | (n,p)    | Co-58   | 1700.4        | ENDF/B-VI      | E264-19       |
+| Fe-54    | (n,p)    | Mn-54   | 7492.56       | ENDF/B-VIII.1  | E263-18       |
+| Cu-63    | (n,α)    | Co-60   | 46174.836     | ENDF/B-VI      | E523-92       |
+| Ti-48    | (n,p)    | Sc-48   | 2011.44       | EAF-2010       | E526-92       |
+| Na-23    | (n,γ)    | Na-24   | 14.4958       | ENDF/B-VIII.1  | E720-16       |
+| Co-59    | (n,γ)    | Co-60   | 33524.196     | ENDF/B-VIII.1  | E720-16       |
+| S-32     | (n,p)    | P-32    | 342.816       | ENDF/B-VIII.1  | E720-16       |
+
+
+---
 ## 🧩 Module 1: Data Preparation
 **Script:** `cross_section_input_generator.py`
 **User Interface**  
