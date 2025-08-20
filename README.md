@@ -180,7 +180,7 @@ This module processes the results from multiple spectrum inversion runs and gene
 - Error-band plot (Mean ± Std Dev), exportable as an image  
 ---
 ## Benchmarks — MCNP
-
+To evaluate the performance of SpecKit, MCNP simulations were employed to generate both synthetic and a priori neutron spectra. The neutron spectrum was discretized into 120 energy groups, and ten activation products were selected as response monitors for the spectral unfolding analysis.
 ### (1) Double-Peak Spectrum
 
 For the performance verification study, the **true spectrum** was generated using the MCNP code.  
