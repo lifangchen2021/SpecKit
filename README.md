@@ -62,6 +62,9 @@ SpecKit/
 │    ├── neutron_spectrum_solver.py
 │    ├── spectrum_errorbar_viewer.py
 │    └── SpecKit.py
+├── Example/                           
+│    ├── Au-197_Au-198.txt
+│    └──  prior.txt
 ├── .gitignore                     # Git ignore rules
 ├── LICENSE                        # License file (MIT)
 └── README.md                      # Project description and usage guide
