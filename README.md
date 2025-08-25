@@ -293,6 +293,77 @@ Notably, **multi-material combinations** effectively suppress extreme errors in 
 The unfolded results match closely above 1 MeV, while deviations rapidly increase toward lower energy ranges.  
 
 ---
+## 🔬 Example Workflow
+
+This example demonstrates how to use **SpecKit** to calculate neutron flux at a measurement position using activation data (Au-197) and a simulated prior spectrum.
+
+### Experimental Data
+
+- **Activation Material**: Au-197  
+- **Mass**: 1 g  
+- **Atomic Weight**: 197  
+- **Half-life**: 64.56 hours  
+- **Irradiation Time**: 6 hours  
+- **Cooling Time**: 6 hours  
+- **Measured Activity**: 51,467.25 Bq  
+- **Uncertainty (1σ)**: 514.333  
+
+The simulated neutron flux file (`prior.txt`) was obtained using **MCNP**.
+
+---
+
+### Step 1: Data Preparation
+
+1. Select **Cross-Section Data File**:  
+Au-197_Au-198.txt
+
+2. Select **Energy Bin File**:  
+prior.txt
+
+
+3. Enter the activation data and click **Start Processing**:
+- (a) **Without error analysis** → set `Uncertainty of Measured Activity = 0`
+![Data Preparation UI](./fig/fig16.png)
+- (b) **With error analysis** → set `Uncertainty of Measured Activity = 514.333`
+![Data Preparation UI](./fig/fig17.png)  
+4. Choose the save location and filename for the output file.  
+![Data Preparation UI](./fig/fig18.png)
+---
+
+### Step 2: Spectrum Inversion
+
+1. Click **Select Activation Product Parameter File**, then choose the CSV file generated in Step 1.  
+2. Select the initial spectrum file:  
+prior.txt
+
+3. Set **Number of Iterations for Inversion**:
+- (a) Without error analysis → `1`  
+- (b) With error analysis → desired number of iterations
+![Data Preparation UI](./fig/fig19.png)
+4. Click **Start Training**, then select save location and filename:
+- Without error analysis → only one dataset will be generated, and the computation ends.  
+- With error analysis → multiple results are generated and must be processed in Step 3.
+![Data Preparation UI](./fig/fig20.png)
+5. Click **Save Chart** to export the plot.  
+
+---
+
+### Step 3: Error Analysis
+
+1. Select the output file from Step 2.  
+- The program will automatically compute the results and generate a CSV file with suffix:  
+  ```
+  _mean_std
+  ```
+- Example: `result_mean_std.csv`  
+2. Optionally, click **Save Chart as Image** to export the results as a figure.  
+![Data Preparation UI](./fig/fig21.png)
+---
+
+👉 With these steps, you can reproduce the neutron flux calculation based on Au-197 activation and compare simulation with experimen
+
+
+---
 ## 🔽 Download and Installation
 
 A precompiled executable file (**SpecKit.exe**) is provided for users who prefer to run the program without compiling the source code.  
