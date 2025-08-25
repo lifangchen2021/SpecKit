@@ -39,7 +39,7 @@ The core algorithm is based on:
 ## 📦 Installation
 ```bash
 # Clone the repository
-git clone https://github.com/lifangchen2021/speckit.git
+git clone https://github.com/lifangchen2021/SpecKit.git
 cd speckit
 
 # Install dependencies
