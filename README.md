@@ -42,8 +42,6 @@ The core algorithm is based on:
 git clone https://github.com/lifangchen2021/SpecKit.git
 cd speckit
 
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ---
