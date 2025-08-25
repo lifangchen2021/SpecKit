@@ -60,7 +60,8 @@ SpecKit/
 ├── src/                           # Source code (core Python scripts)
 │    ├── cross_section_input_generator.py
 │    ├── neutron_spectrum_solver.py
-│    └── spectrum_errorbar_viewer.py
+│    ├── spectrum_errorbar_viewer.py
+│    └── SpecKit.py
 ├── .gitignore                     # Git ignore rules
 ├── LICENSE                        # License file (MIT)
 └── README.md                      # Project description and usage guide
