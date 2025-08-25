@@ -390,4 +390,4 @@ Contributions are welcome! Feel free to open issues, submit pull requests, or su
 ---
 
 ## 🌟 Acknowledgements
-This toolkit was developed in the context of neutron activation analysis research at the **National Atomic Energy Technology Research Institute**. Special thanks to the open-source scientific computing community for foundational tools that made SPECKIT possible.
+This toolkit was developed in the context of neutron activation analysis research at the **National Atomic Research Institute**. Special thanks to the open-source scientific computing community for foundational tools that made SPECKIT possible.
