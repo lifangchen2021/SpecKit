@@ -388,6 +388,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Contributions are welcome! Feel free to open issues, submit pull requests, or suggest new features. 
 
 ---
-
-## 🌟 Acknowledgements
-This toolkit was developed in the context of neutron activation analysis research at the **National Atomic Research Institute**. Special thanks to the open-source scientific computing community for foundational tools that made SPECKIT possible.
