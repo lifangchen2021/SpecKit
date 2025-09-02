@@ -1,4 +1,4 @@
-# SPECKIT
+# SpecKit
 
 ![SPECKIT Logo](./fig/fig0.png)
 
