@@ -236,6 +236,10 @@ for three representative energy intervals:
 - Epithermal/Intermediate region: 2.5×10⁻⁸ – 1 MeV  
 - Fast region: 1 – 30 MeV  
 
+In this study, we tested several alternative group boundary configurations to evaluate the performance of the unfolding procedure. We found that setting the upper limit of the thermal region at 0.0258 eV provides a clearer separation of activation product sensitivities across energy ranges, which in turn highlights the performance of SpecKit in reconstructing neutron fluxes.
+
+This choice is intended solely for illustrative and benchmarking purposes, and should not be interpreted as a new standard definition of thermal, epithermal, or fast neutron ranges.
+
 A total of **ten activation products** were selected as reaction channels in this benchmark:  
 Au-197, Fe-56, Al-27, Ni-58, Fe-54, Cu-63, Ti-48, Na-23, Co-59, and S-32.  
 The relative error for each activation product was evaluated individually in the three energy regions and compared with the prior spectrum. In Table 2,  
