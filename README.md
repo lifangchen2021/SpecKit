@@ -162,6 +162,8 @@ and reconstructs the unknown neutron spectrum (x).
 - CSV file of reconstructed neutron spectrum (per run)  
 - Convergence curves and spectrum plots (exportable as PNG/PDF)  
  ![Data Preparation UI](./fig/fig6.png) 
+- The corresponding values are displayed in the program console.      
+![Data Preparation UI](./fig/fig22.png)
 ---
 ## 🧩 Module 3: Spectrum Error Bar Viewer
 **Script:** `spectrum_errorbar_viewer.py`
