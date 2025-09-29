@@ -183,6 +183,39 @@ This module processes the results from multiple spectrum inversion runs and gene
 - CSV file containing group-wise mean flux and standard deviation  
 - Error-band plot (Mean ± Std Dev), exportable as an image  
 ---
+## 🎉 Bonus Feature: `spectrum_groupflux_comparison`
+
+In addition to the main SpecKit modules (Data Preparation, Spectrum Inversion, and Error Analysis),  
+we also provide an **extra visualization tool**:  
+
+### 🔎 Purpose
+`spectrum_groupflux_comparison` allows users to **simultaneously visualize**:
+- **Group Flux** (step plot, dashed line)  
+- **Spectrum (per lethargy)** (solid line)  
+
+This makes it straightforward to compare group-wise neutron flux values with their corresponding spectrum representation, which is often requested by reviewers and useful for publication-quality figures.
+
+### 🖼️ Example Usage
+1. Select an Excel file containing energy groups and flux data. (an example file can be found at benchmark/double_peak/results/error calculate.xlsx)      
+2. Choose one or more columns to plot.  
+3. The tool will generate a **comparison plot** where:  
+   - Group flux is shown as a **dashed step curve**.  
+   - Spectrum is shown as a **solid curve**.  
+   - Multiple datasets can be overlaid automatically with distinct colors.  
+
+### ✨ Features
+- Automatic handling of zero/invalid flux values.  
+- Log–log scale plotting (1E−9 MeV to 30 MeV).  
+- High-resolution output suitable for journal figures.  
+- Multi-line support with automatic color cycling.  
+
+---
+
+📌 *Note:* This feature is provided as a supplementary visualization tool.  
+It is not part of the core SpecKit methodology, but serves as a convenient way to illustrate results for papers, reports, or teaching purposes.
+
+---
+
 ## Benchmarks — MCNP
 To evaluate the performance of SpecKit, MCNP simulations were employed to generate both synthetic and a priori neutron spectra. The neutron spectrum was discretized into 120 energy groups, and ten activation products were selected as response monitors for the spectral unfolding analysis.
 ### (1) Double-Peak Spectrum
