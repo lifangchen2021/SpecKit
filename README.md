@@ -202,6 +202,7 @@ This makes it straightforward to compare group-wise neutron flux values with the
    - Group flux is shown as a **dashed step curve**.  
    - Spectrum is shown as a **solid curve**.  
    - Multiple datasets can be overlaid automatically with distinct colors.  
+![Data Preparation UI](./fig/fig23.png)
 
 ### ✨ Features
 - Automatic handling of zero/invalid flux values.  
