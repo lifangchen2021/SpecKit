@@ -187,7 +187,7 @@ This module processes the results from multiple spectrum inversion runs and gene
 
 In addition to the main SpecKit modules (Data Preparation, Spectrum Inversion, and Error Analysis),  
 we also provide an **extra visualization tool**:  
-
+![Data Preparation UI](./fig/fig24.png)
 ### 🔎 Purpose
 `spectrum_groupflux_comparison` allows users to **simultaneously visualize**:
 - **Group Flux** (step plot, dashed line)  
