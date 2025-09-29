@@ -16,7 +16,7 @@ from tkinter import ttk
 from cross_section_input_generator import create_cross_section_tab
 from neutron_spectrum_solver import NeuralSolverApp
 from spectrum_errorbar_viewer import SpectrumErrorBarApp
-from spectrum_groupflux_comparison1 import SpectrumComparisonApp
+from spectrum_groupflux_comparison import SpectrumComparisonApp
 
 def create_analysis_tab(parent):
     frame = tk.Frame(parent)
@@ -61,4 +61,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = BackSpecApp(root)
     root.mainloop()
+
     
