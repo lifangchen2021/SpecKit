@@ -197,7 +197,8 @@ we also provide an **extra visualization tool**:
 This makes it straightforward to compare group-wise neutron flux values with their corresponding spectrum representation, which is often requested by reviewers and useful for publication-quality figures.
 
 ### 🖼️ Example Usage
-1. Select an Excel file containing energy groups and flux data. (an example file can be found at benchmark/double_peak/results/error calculate.xlsx)      
+1. Select an Excel file containing energy groups and flux data. (an example file can be found at benchmark/double_peak/results/error calculate.xlsx)
+![Data Preparation UI](./fig/fig25.png)    
 2. Choose one or more columns to plot.  
 3. The tool will generate a **comparison plot** where:  
    - Group flux is shown as a **dashed step curve**.  
