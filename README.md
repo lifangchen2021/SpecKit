@@ -61,6 +61,7 @@ SpecKit/
 │    ├── cross_section_input_generator.py
 │    ├── neutron_spectrum_solver.py
 │    ├── spectrum_errorbar_viewer.py
+│    ├── spectrum_groupflux_comparison.py
 │    └── SpecKit.py
 ├── Example/                           
 │    ├── Au-197_Au-198.txt
