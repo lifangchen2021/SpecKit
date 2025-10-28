@@ -339,7 +339,7 @@ The unfolded results match closely above 1 MeV, while deviations rapidly increas
 
 ---
 
-We employed **ERRE** as the evaluation metric to compare **SpecKit** with classical neutron spectrum unfolding programs, including **SAND-II**, **STAY’SL**, and **RFSP-JÜL**（*１）.  
+We employed **ERRE** as the evaluation metric to compare **SpecKit** with classical neutron spectrum unfolding programs, including **SAND-II**, **STAY’SL**, and **RFSP-JÜL**[*１].  
 
 SpecKit achieved an ERRE of ~5.8%, within the typical range reported for classical codes (3–6%). Although the spectra used for validation differ, with prior errors in the literature generally much smaller than in our case (~37%), SpecKit was still able to converge to ~5.8%. This demonstrates performance consistent with benchmark programs and highlights the robustness of the method.
 
@@ -350,9 +350,9 @@ This demonstrates performance **consistent with benchmark programs** and highlig
 
 | Software         | ERRE Range (Average Activity Error) | Spectrum Case           |
 |------------------|--------------------------------------|--------------------------|
-| **SAND-II**      | ~6.13% [18]                          | CFRM                     |
-| **CRYSTAL-BALL** | ~6.55% [18]                          | CFRM                     |
-| **RFSP-JÜL**     | ~6.74% [18]                          | CFRM                     |
+| **SAND-II**      | ~6.13% [*１]                          | CFRM                     |
+| **CRYSTAL-BALL** | ~6.55% [*１]                          | CFRM                     |
+| **RFSP-JÜL**     | ~6.74% [*１]                          | CFRM                     |
 | **SpecKit**      | ~5.8%                                | Test case in this study  |
 
 
