@@ -338,6 +338,28 @@ Notably, **multi-material combinations** effectively suppress extreme errors in 
 The unfolded results match closely above 1 MeV, while deviations rapidly increase toward lower energy ranges.  
 
 ---
+
+We employed **ERRE** as the evaluation metric to compare **SpecKit** with classical neutron spectrum unfolding programs, including **SAND-II**, **STAY’SL**, and **RFSP-JÜL**.  
+
+SpecKit achieved an **ERRE of ~5.8%**, which falls within the typical range reported for classical codes (**3–6%**). Although the validation spectra differ — previous studies generally involved smaller prior errors (~37%) — SpecKit was still able to converge to an ERRE of approximately 5.8%.  
+
+This demonstrates performance **consistent with benchmark programs** and highlights the **robustness** of the SpecKit method.  
+
+
+### 📊  Comparison of ERRE Performance Between SpecKit and Classical Unfolding Codes
+
+| Software         | ERRE Range (Average Activity Error) | Spectrum Case           |
+|------------------|--------------------------------------|--------------------------|
+| **SAND-II**      | ~6.13% [18]                          | CFRM                     |
+| **CRYSTAL-BALL** | ~6.55% [18]                          | CFRM                     |
+| **RFSP-JÜL**     | ~6.74% [18]                          | CFRM                     |
+| **SpecKit**      | ~5.8%                                | Test case in this study  |
+
+
+
+**ERRE**： Zijp, W. L., & Nolthenius, H. J. (1979). *Comparison of neutron spectrum unfolding codes (Sixth progress report)* (ECN-79-008). Petten: Netherlands Energy Research Foundation (ECN), prepared under IAEA Research Contract 1811/R1/RS.
+
+---
 ## 🔬 Example Workflow
 
 This example demonstrates how to use **SpecKit** to calculate neutron flux at a measurement position using activation data (Au-197) and a simulated prior spectrum.
