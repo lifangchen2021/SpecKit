@@ -86,11 +86,11 @@ class SpectrumComparisonApp:
         plt.xlim(1E-9, 30)
         plt.ylim(bottom=1)
 
-        plt.xlabel("Energy (MeV) (log scale)")
-        plt.ylabel("Flux (/cm²·s) (log scale)")
-        plt.title("Spectrum vs Group Flux Comparison")
+        plt.xlabel("Energy (MeV) (log scale)", fontsize=14)
+        plt.ylabel("Flux (/cm²·s) (log scale)", fontsize=14)
+        plt.title("Spectrum vs Group Flux Comparison", fontsize=16)
         plt.grid(True, which='both', linestyle='--', linewidth=0.5)
-        plt.legend(loc="upper right", fontsize=9)
+        plt.legend(loc="upper right", fontsize=12)
          # Embed the plot into the Tkinter tab
         canvas = FigureCanvasTkAgg(fig, master=self.parent)
         canvas.draw()
@@ -106,7 +106,7 @@ class SpectrumComparisonApp:
                                       title="Save Plot As")
         if file_path:
             try:
-                self.current_figure.savefig(file_path, dpi=300, bbox_inches="tight")
+                self.current_figure.savefig(file_path, dpi=600, bbox_inches="tight")
                 messagebox.showinfo("Success", f"Plot saved to:\n{file_path}")
             except Exception as e:
                 messagebox.showerror("Save Error", f"Could not save plot:\n{e}")
