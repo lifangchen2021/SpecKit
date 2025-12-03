@@ -447,6 +447,17 @@ For other platforms, please use the Python source code provided in this reposito
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+## 🎉 Publication Announcement 
+
+We are pleased to announce that our software **speckit** has been officially accepted for publication in **SoftwareX**.  
+This marks an important milestone: the project has successfully passed peer review and will be published as an open-access article.
+
+**Citation and DOI**  
+- **Title:** *speckit*  
+- **Journal:** SoftwareX  
+- **DOI:** [https://doi.org/10.1016/j.softx.2025.102456](https://doi.org/10.1016/j.softx.2025.102456)
+
+---
 
 ## 🧑‍💻 Contributing
 Contributions are welcome! Feel free to open issues, submit pull requests, or suggest new features. 
