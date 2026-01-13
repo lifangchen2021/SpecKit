@@ -98,7 +98,7 @@ By combining these materials, a comprehensive response matrix sensitive to a wid
 | Cu-63    | (n,α)    | Co-60   | 46174.836     | ENDF/B-VI      | E523-92       |
 | Ti-48    | (n,p)    | Sc-48   | 2011.44       | EAF-2010       | E526-92       |
 | Na-23    | (n,γ)    | Na-24   | 14.4958       | ENDF/B-VIII.1  | E720-16       |
-| Co-59    | (n,γ)    | Co-60   | 33524.196     | ENDF/B-VIII.1  | E720-16       |
+| Co-59    | (n,γ)    | Co-60   | 46174.836     | ENDF/B-VIII.1  | E720-16       |
 | S-32     | (n,p)    | P-32    | 342.816       | ENDF/B-VIII.1  | E720-16       |
 
 
