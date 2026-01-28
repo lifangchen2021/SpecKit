@@ -453,7 +453,7 @@ We are pleased to announce that our software **speckit** has been officially acc
 This marks an important milestone: the project has successfully passed peer review and will be published as an open-access article.
 
 **Citation and DOI**  
-- **Title:** *speckit*  
+- **Title:** *SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions*  
 - **Journal:** SoftwareX  
 - **DOI:** [https://doi.org/10.1016/j.softx.2025.102456](https://doi.org/10.1016/j.softx.2025.102456)
 
