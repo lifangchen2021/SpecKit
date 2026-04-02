@@ -93,8 +93,8 @@ class SpectrumErrorBarApp:
                      f"Average total flux: {mean_total_flux:.2e} ± {std_total_flux:.2e} "
                      f"(RSD={rsd:.2%})"
             )
-            print(f"Average total flux: {mean_total_flux:.3e} /cm²")
-            print(f"Total flux standard deviation: {std_total_flux:.3e} /cm²")
+            print(f"Average total flux: {mean_total_flux:.3e} /cm²·s")
+            print(f"Total flux standard deviation: {std_total_flux:.3e} /cm²·s")
             print(f"Relative standard deviation RSD: {rsd:.2%}")
 
             # 畫圖
@@ -109,7 +109,7 @@ class SpectrumErrorBarApp:
             self.ax.set_xscale("log")
             self.ax.set_yscale("log")
             self.ax.set_xlabel("Neutron Energy (MeV)")
-            self.ax.set_ylabel("Flux (/cm²)")
+            self.ax.set_ylabel("Flux (/cm²·s)")
             self.ax.set_ylim(bottom=1)
             self.ax.set_title("Mean group flux with Error Bar")
             self.ax.legend()
