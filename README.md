@@ -456,7 +456,16 @@ This marks an important milestone: the project has successfully passed peer revi
 - **Title:** *SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions*  
 - **Journal:** SoftwareX  
 - **DOI:** [https://doi.org/10.1016/j.softx.2025.102456](https://doi.org/10.1016/j.softx.2025.102456)
+## 📢 Erratum / Corrigendum
 
+A corrigendum to our SoftwareX publication has been released.
+
+- **Article**: Corrigendum to “SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions”
+- **Journal**: SoftwareX  
+- **Link**: https://www.sciencedirect.com/science/article/pii/S2352711026001494
+
+This corrigendum provides clarifications and corrections related to the originally published article.  
+Users are encouraged to refer to this document alongside the main publication.
 ---
 
 ## 🧑‍💻 Contributing
