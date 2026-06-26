@@ -434,7 +434,7 @@ prior.txt
 
 Reproducibility data for the study *“Effects of Energy-Group Resolution on SpecKit-Based Neutron Spectrum Unfolding”* are available in:
 
-[benchmark/energy_group_resolution_2026/](./benchmark/energy_group_resolution_2026/)
+[manuscript_2026_energy_group_resolution/](./manuscript_2026_energy_group_resolution/)
 
  ![Comparison of spectrum unfolding results for 60-, 113- and 240-group structures against the ground truth spectrum](./fig/fig26.png) 
  
