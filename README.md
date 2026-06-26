@@ -429,7 +429,14 @@ prior.txt
 
 👉 With these steps, you can reproduce the neutron flux calculation based on Au-197 activation and compare simulation with experimen
 
+---
+## Energy-Group Resolution Study
 
+Reproducibility data for the study *“Effects of Energy-Group Resolution on SpecKit-Based Neutron Spectrum Unfolding”* are available in:
+
+[benchmark/energy_group_resolution_2026/](./benchmark/energy_group_resolution_2026/)
+
+This dataset contains the MCNP-generated benchmark spectrum (ground truth), prior and unfolded spectra for the 60-, 113-, and 240-group cases, and the numerical data used to generate the tables and figures reported in the manuscript.
 ---
 ## 🔽 Download and Installation
 
