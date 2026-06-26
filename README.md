@@ -436,6 +436,7 @@ Reproducibility data for the study *“Effects of Energy-Group Resolution on Spe
 
 [benchmark/energy_group_resolution_2026/](./benchmark/energy_group_resolution_2026/)
 
+ ![Comparison of spectrum unfolding results for 60-, 113- and 240-group structures against the ground truth spectrum](./fig/fig26.png) 
 This dataset contains the MCNP-generated benchmark spectrum (ground truth), prior and unfolded spectra for the 60-, 113-, and 240-group cases, and the numerical data used to generate the tables and figures reported in the manuscript.
 ---
 ## 🔽 Download and Installation
