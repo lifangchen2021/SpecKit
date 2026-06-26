@@ -350,17 +350,23 @@ This demonstrates performance **consistent with benchmark programs** and highlig
 
 | Software         | ERRE Range (Average Activity Error) | Spectrum Case           |
 |------------------|--------------------------------------|--------------------------|
-| **SAND-II**      | ~6.13% [*１]                          | CFRM                     |
-| **CRYSTAL-BALL** | ~6.55% [*１]                          | CFRM                     |
-| **RFSP-JÜL**     | ~6.74% [*１]                          | CFRM                     |
+| **SAND-II**      | ~4.56% [*１]                          | CFRM                     |
+| **CRYSTAL-BALL** | ~6.00% [*１]                          | CFRM                     |
+| **RFSP-JÜL**     | ~6.03% [*１]                          | CFRM                     |
 | **SpecKit**      | ~5.8%                                | Test case in this study  |
 
 
 
 *１： Zijp, W. L., & Nolthenius, H. J. (1979). *Comparison of neutron spectrum unfolding codes (Sixth progress report)* (ECN-79-008). Petten: Netherlands Energy Research Foundation (ECN), prepared under IAEA Research Contract 1811/R1/RS.
-
+### Correction Notice
+<p>
+A calculation error was identified in the ERRE values reported for the classical unfolding codes in Table 3 of the SoftwareX article:
+Chen, L.-F. (2025). SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions. SoftwareX 32: 102456.  
+The corrected values were recalculated from the reaction-rate ratios reported in Zijp and Nolthenius (1979), using the ERRE definition adopted in the article.
+We sincerely apologize for the error in the originally reported comparison values. This correction affects the numerical values in the classical-code comparison table; the main conclusion that SpecKit achieved performance comparable to the cited benchmark methods remains unchanged. </p>
 ---
-## 🔬 Example Workflow
+
+### 🔬 Example Workflow
 
 This example demonstrates how to use **SpecKit** to calculate neutron flux at a measurement position using activation data (Au-197) and a simulated prior spectrum.
 
