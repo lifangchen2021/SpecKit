@@ -463,25 +463,29 @@ For other platforms, please use the Python source code provided in this reposito
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-## 🎉 Publication Announcement 
+## 🎉 Publications
 
-We are pleased to announce that our software **speckit** has been officially accepted for publication in **SoftwareX**.  
-This marks an important milestone: the project has successfully passed peer review and will be published as an open-access article.
+We are pleased to announce the publication of our research related to **SpecKit**.
 
-**Citation and DOI**  
-- **Title:** *SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions*  
-- **Journal:** SoftwareX  
-- **DOI:** [https://doi.org/10.1016/j.softx.2025.102456](https://doi.org/10.1016/j.softx.2025.102456)
+### 📄 Research Article (2026)
+
+- **Title:** *Effects of energy-group resolution on SpecKit-based neutron spectrum unfolding*
+- **Authors:** Li-Fang Chen and Yu-Lim Chen
+- **Journal:** Kerntechnik
+- **DOI:** [10.1515/kern-2026-0026](https://doi.org/10.1515/kern-2026-0026)
+
+### 💻 Software Article (2025)
+
+- **Title:** *SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions*
+- **Journal:** SoftwareX
+- **DOI:** [10.1016/j.softx.2025.102456](https://doi.org/10.1016/j.softx.2025.102456)
 ## 📢 Erratum / Corrigendum
 
-A corrigendum to our SoftwareX publication has been released.
+A corrigendum to our original **SoftwareX** publication is available. Readers are encouraged to consult it alongside the original article.
 
-- **Article**: Corrigendum to “SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions”
-- **Journal**: SoftwareX  
-- **Link**: https://www.sciencedirect.com/science/article/pii/S2352711026001494
-
-This corrigendum provides clarifications and corrections related to the originally published article.  
-Users are encouraged to refer to this document alongside the main publication.
+- **Title:** *Corrigendum to “SpecKit: An integrated toolkit for neutron spectrum unfolding using activation reactions”*
+- **Journal:** SoftwareX
+- **Link:** [View Corrigendum](https://www.sciencedirect.com/science/article/pii/S2352711026001494)
 ---
 
 ## 🧑‍💻 Contributing
