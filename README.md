@@ -27,12 +27,13 @@ The core algorithm is based on:
 ---
 ## 📦 Dependencies
 
-- Python >= 3.8  
+- Python >= 3.11  
 - numpy  
 - matplotlib  
 - pandas  
 - scipy  
 - tkinter (pre-installed in most Python distributions)  
+- bssunfold (provides additional unfolding methods)  
 
 ---
 
@@ -42,6 +43,11 @@ The core algorithm is based on:
 git clone https://github.com/lifangchen2021/SpecKit.git
 cd speckit
 
+# Install dependencies (Python >= 3.11)
+pip install -e .
+
+# or with uv
+uv pip install -e .
 ```
 
 ---
@@ -152,7 +158,16 @@ and reconstructs the unknown neutron spectrum (x).
 ### Method
 - Based on **least-squares minimization**  
 - Uses **gradient descent optimization** with **log-smoothness regularization** to stabilize the solution  
-- Default convergence threshold is automatically calculated using the **chi-square distribution** (95% confidence level), ensuring statistical interpretability  
+- Default convergence threshold is automatically calculated using the **chi-square distribution** (95% confidence level), ensuring statistical interpretability
+
+### Available unfolding methods
+In addition to the original SpecKit gradient method, the following methods from the
+`bssunfold` package are available through the method selector in the GUI:
+
+- TSVD, Landweber, MLEM, GRAVEL, MAXED (MaxEnt)
+- Tikhonov (Legendre polynomials), Total Variation
+- Kaczmarz, SART, CGLS, PGD
+- StatReg, Bayes, Crystal Ball  
 
 ### Features
 - **Developer Mode**: adjust learning rate, max iterations, and loss threshold  
